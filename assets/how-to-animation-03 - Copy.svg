@@ -1,0 +1,35 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1024">
+<defs>
+<style>
+.cls-1{
+    fill:mediumseagreen;
+    stroke:#2c3845;
+    stroke-miterlimit:10;
+    stroke-width:10px;
+}
+.b1{
+    animation: pop 4s infinite;
+}
+.b2{
+    animation: pop1 4s infinite;
+}
+
+@keyframes pop{
+    0%{transform:translateY(100px); opacity:0;}
+    30%{transform:translateY(100px); opacity:0}
+    60%{transform:translateY(0px); opacity:1}
+    100%{transform:translateY(0px); opacity:0}
+}
+@keyframes pop1{
+    0%{transform:translateY(100px); opacity:0}
+    30%{transform:translateY(0); opacity:1}
+    60%{transform:translateY(0); opacity:1}
+    100%{transform:translateY(0); opacity:0}
+}
+</style>
+</defs>
+<title>
+how-to-animation</title>
+<path class="cls-1 b1" d="M1172.1,218H772.9A37.9,37.9,0,0,0,735,255.9V460.63a37.9,37.9,0,0,0,37.9,37.9h272.57c9.48,84,115.35,84.94,115.35,84.94-35.66-22.2-31.75-60.75-24.68-84.94h36a37.9,37.9,0,0,0,37.9-37.9V255.9A37.9,37.9,0,0,0,1172.1,218Z"/>
+<path class="cls-1 b2" d="M189.4,530.48H588.6a37.9,37.9,0,0,1,37.9,37.9V773.11A37.9,37.9,0,0,1,588.6,811H316C306.55,895,200.68,896,200.68,896c35.66-22.2,31.75-60.75,24.68-84.94h-36a37.9,37.9,0,0,1-37.9-37.9V568.38A37.9,37.9,0,0,1,189.4,530.48Z"/>
+</svg>
