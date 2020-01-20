@@ -67,9 +67,9 @@ include_once "../php.class/teacher.php";
     
   }
 
-  $sess_name = isset($_SESSION["name"]) ? $_SESSION["name"] : "Whose";
+  $sess_name = isset($_SESSION["name"]) ? $_SESSION["name"].'\'s Review': "Log in to Review";
   $page = array(
-    "title"=>$_GET["param"] === "" ? $sess_name."'s Review" : substr(preg_replace("/_|-/"," ",$_GET["param"]),1)." - Teacher Review",
+    "title"=>$_GET["param"] === "" ? $sess_name: substr(preg_replace("/_|-/"," ",$_GET["param"]),1)." - Teacher Review",
     "js"=>["js/custom-component/rate.js","js/reviews.js", "js/custom-component/form-verify.js"],
     "css"=>["https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"]
   );

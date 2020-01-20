@@ -294,6 +294,11 @@ p{
     margin: 0 auto;
     align-self: flex-end;
   }
+  section.find-teacher form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
   section.about{
     padding: 0 20px;
     padding-top: 10vh;

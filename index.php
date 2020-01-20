@@ -36,12 +36,14 @@
       </div>
     </section>
     <section class="find-teacher">
-      <h1 class="unique">Find Your Teacher</h1>
-      <input type="text" name="search-teacher" id="search-teacher">
-      <div class="btn-container">
-        <input type="submit" name="submit" value="Search" id="submit" class="btn blue-btn">
-      </div>
-      <img src="assets/bg-1.png" />
+      <form action="teachers" method="get">
+        <h1 class="unique">Find Your Teacher</h1>
+        <input type="text" name="search" id="search">
+        <div class="btn-container">
+          <input type="submit" name="submit" value="Search" id="submit" class="btn blue-btn">
+        </div>
+        <img src="assets/bg-1.png" />
+      </form>
     </section>
   </div>
 
