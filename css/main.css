@@ -121,6 +121,7 @@ p{
      font-family: var(--font-p);
      font-weight: 500;
      text-align: center;
+     cursor: pointer;
    }
    .btn.blue-btn{
      background: #4a7ee5;
@@ -401,8 +402,9 @@ p{
     font-size: 2em;
     margin-bottom: 10px;
   }
-  section.review .side-bar .img{
-    background-color: gray;
+  section.review .side-bar .img,
+  section.setting .side-bar .img{
+      background-color: gray;
     background-size: cover;
     background-position: center;
     min-height: 350px;
@@ -412,7 +414,8 @@ p{
     margin: auto;
     display: flex;
   }
-  section.review .side-bar .img:not([style])::after{
+  section.review .side-bar .img:not([style])::after,
+  section.setting .side-bar .img:not([style])::after{
     content: "?";
     display: flex;
     align-self: center;
@@ -423,7 +426,8 @@ p{
     font-size: 7em;
     width: 100%;
   }
-  section.review .side-bar{
+  section.review .side-bar,
+  section.setting .side-bar{
     font-size: .8em;
     font-weight: 500;
     font-family: var(--font-p);
@@ -834,6 +838,33 @@ p{
   section.message .message-display{
     margin: 0 20px;
   }
+  section.setting{
+    padding: 0 20px;
+    padding-top: 10vh;
+    align-content: baseline;
+  }
+  section.setting .content label{
+    display: contents;
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 0;
+  }
+  section.setting .content strong{
+    flex: 1;
+    font-weight: 500;
+  }
+  section.setting .content input:not([type='submit']){
+    flex: 3;
+    padding: 5px;
+    border: none;
+  }
+  section.setting input[type='file']{
+    display: none;
+  }
+  section.setting .content{
+    font-family: var(--font-p);
+    width: 100%;
+  }
   /* ==========================================================================
    responsive sizing
    ========================================================================== */
@@ -956,7 +987,11 @@ p{
     section.about::after{
       display: block;
     }  
-    section.review .content{
+    section.setting .content{
+      margin-left: 30px;
+    }
+    section.review .content
+    {
       margin-left: 30px;
     }
     section.search .search-container select,

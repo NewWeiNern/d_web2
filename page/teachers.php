@@ -26,7 +26,7 @@
     <section class="search">
         <form>
             <div class="search-container flex-wrap container">
-                <input type="text" name="search" id="search" value="<?= $search ? $search_text : "";?>">
+                <input type="text" name="search" id="search" value="<?= $search ? $search_text : "";?>" pattern="[A-Za-z0-9\ ]">
                 <select name="school" id="school">
                     <option value="*">All</option>
                     <?php foreach($school as $key => $value) {echo '<option value="'.$value->name.'" '.($school_isset && $school_text === $value->name ? "selected" : "").'>'.$value->name.'</option>';} ?>
@@ -38,6 +38,7 @@
     <section class="results">
     <?= $search ? "<h1 class=\"container\">Search Result : $search_text </h1>" : ""; ?>
           <div class="container teachers">
+          <?=count($teacher_result) == 0 ? "<p style='text-align:center;'>Result not found!</p>" : null?>
           <?php foreach($teacher_result as $key =>$value){
             echo "
             <a href='reviews/".preg_replace("/\s/", "_",$value["name"])."'>
