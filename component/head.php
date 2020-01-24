@@ -7,7 +7,7 @@ $_SESSION["prev_page"] = $_SERVER["REQUEST_URI"]; // for use in returning to pre
 
 <head>
   <meta charset="utf-8">
-  <base href="/d_web2/"/>
+  <base href="/185498h_newweinern_d_web2/"/>
   <title><?= isset($page['title']) ? $page["title"] : "Teacher Review" ?></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
