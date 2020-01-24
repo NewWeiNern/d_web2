@@ -4,7 +4,7 @@ class DB{
     protected static $local = "localhost";
     protected static $root = "root";
     protected static $pass = "";
-    protected static $db = "db_teacher_review";
+    protected static $db = "db_a2_newweinern";
     function __construct(){
         $this->connect = new mysqli(self::$local, self::$root, self::$pass, self::$db);
     }

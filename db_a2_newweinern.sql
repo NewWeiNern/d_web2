@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2020 at 06:34 PM
+-- Generation Time: Jan 24, 2020 at 03:52 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -19,10 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_teacher_review`
+-- Database: `db_a2_newweinern`
 --
-CREATE DATABASE IF NOT EXISTS `db_teacher_review` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `db_teacher_review`;
+CREATE DATABASE IF NOT EXISTS `db_a2_newweinern` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `db_a2_newweinern`;
 
 -- --------------------------------------------------------
 
@@ -51,7 +51,8 @@ INSERT INTO `db_reviews` (`id`, `user_id`, `teacher_id`, `rating`, `post`, `date
 (7, 2, 4, '[5,5,4.5,5]', 'Tan Swee Fong is the best teacher makes lesson easy.', '2020-01-09 17:00:35'),
 (8, 58, 1, '[3.5,3,4,5]', 'Good teacher, funniest thing is the name sounds the same as a football player.', '2020-01-14 18:48:02'),
 (10, 3, 4, '[5,5,4,4]', 'Helps me with 1-on-1 tutoring and always give his all. Whenever you need help, please ask him for advice!', '2020-01-14 19:00:31'),
-(11, 3, 1, '[3.5,4,5,4.5]', 'Programming has never been more fun with Mr Rashford.', '2020-01-17 14:11:27');
+(11, 3, 1, '[3.5,4,5,4.5]', 'Programming has never been more fun with Mr Rashford.', '2020-01-17 14:11:27'),
+(12, 60, 4, '[5,5,5,5]', 'Woahh that is my teacher. Lol he still in the same school after 8 years', '2020-01-21 12:22:09');
 
 -- --------------------------------------------------------
 
@@ -100,9 +101,10 @@ CREATE TABLE `db_users` (
 INSERT INTO `db_users` (`id`, `name`, `pass`, `email`, `logged_in`, `privilege`) VALUES
 (1, 'admin', 'admin', 'admin@gmail.com', 0, 1),
 (2, 'NWNPoly', 'Rice', 'nwnpoly@gmail.com', 0, 0),
-(3, 'Luke_ShawE12', 'iamluke', 'nwnpoly@gmail.com', 1, 0),
+(3, 'Luke_ShawE12', 'eminemisdead', 'nwnpoly@gmail.com', 0, 0),
 (58, 'PewDiePie', 'pewpewpew', 'nwnpoly@gmail.com', 0, 0),
-(59, 'BingoMan', 'dingding', 'bingo@gmail.com', 0, 0);
+(59, 'BingoMan', 'dingding', 'bingo@gmail.com', 0, 0),
+(60, 'Hahanimu', 'abbc', 'animu@gmail.com', 1, 0);
 
 --
 -- Indexes for dumped tables
@@ -139,7 +141,7 @@ ALTER TABLE `db_users`
 -- AUTO_INCREMENT for table `db_reviews`
 --
 ALTER TABLE `db_reviews`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `db_teachers`
@@ -151,7 +153,7 @@ ALTER TABLE `db_teachers`
 -- AUTO_INCREMENT for table `db_users`
 --
 ALTER TABLE `db_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- Constraints for dumped tables

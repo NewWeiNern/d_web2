@@ -12,7 +12,7 @@
     if(!isset($_SESSION["name"])){
         header("Location:reviews");
     }
-    $mysqli = new mysqli("localhost","root", "", "db_teacher_review");
+    $mysqli = new mysqli("localhost","root", "", "db_a2_newweinern");
     $user = new User();
     $set_arr = array();
     $set_val = array();
